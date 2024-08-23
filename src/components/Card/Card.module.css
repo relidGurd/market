@@ -1,0 +1,76 @@
+.card {
+  width: auto;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  background-color: var(--primary-bg-color);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--primary-bg-color);
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  border: 1px solid var(--primary-green-color);
+}
+
+.card::after {
+  background: var(--primary-bg-color);
+  border-radius: 150px 150px 0 0;
+  bottom: 0;
+  content: "";
+  height: 5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 85px;
+  box-sizing: border-box;
+  opacity: 0;
+  position: absolute;
+  transition: 0.5s ease;
+}
+
+.card:hover::after {
+  background: var(--primary-green-color);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.cardImageContainer {
+  width: 100%;
+  height: auto;
+}
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: var(--font-bold);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cardDate,
+.cardCategory {
+  display: block;
+  font-size: 12px;
+}
+
+.cardCategory {
+  color: var(--primary-green-color);
+  margin-top: 0.5rem;
+}
+
+.cardDescription {
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.cardDate {
+  color: lightgrey;
+}

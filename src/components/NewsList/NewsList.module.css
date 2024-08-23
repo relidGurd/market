@@ -1,0 +1,17 @@
+.newsListContainer {
+  padding: 3rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.newsListTable {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 3rem;
+}
+
+.newsCard:nth-child(1) {
+  grid-row: span 2 / span 2;
+  grid-column: span 2 / span 2;
+}

@@ -1,0 +1,19 @@
+.ProductCarouselContainer {
+  padding: 3rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.ProductCarouselContainer h2 {
+  margin-bottom: 1.5rem;
+}
+
+.allProductsLink {
+  display: inline-block;
+  transition: 0.2s ease;
+}
+
+.allProductsLink:hover {
+  text-decoration: underline;
+  color: var(--primary-green-color);
+}

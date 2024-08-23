@@ -1,0 +1,87 @@
+.accordionContainer {
+  padding: 3rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 0px;
+}
+
+.sectionTabsInfo {
+  width: 75%;
+  margin-bottom: 4rem;
+}
+
+.sectionTabsInfo p {
+  margin-top: 1.5rem;
+}
+
+.tabButtonList {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabButton:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.tabButton {
+  font-weight: var(--font-bold);
+  font-size: 18px;
+  position: relative;
+  padding: 3rem;
+  text-align: left;
+  background-color: var(--primary-bg-color);
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-bg-color);
+  transition: 0.3s ease;
+}
+
+.tabActive {
+  border: 1px solid #ddeeff;
+  background-color: #ddeeff;
+}
+
+.tabButton:hover {
+  border: 1px solid var(--primary-green-color);
+  transition: 0.5s ease;
+}
+
+.tabButton::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  border-radius: 4rem 0 0 4rem;
+  width: 5px;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--primary-green-color);
+  transition: 0.5s ease;
+}
+
+.tabButton:hover::before {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.tabContent {
+  padding: 3rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary-bg-color);
+}
+
+.tabContent h3,
+.tabContent p,
+.tabContent ul {
+  margin-bottom: 1rem;
+}
+
+.tabContent ul,
+.tabContent li {
+  list-style: inside;
+}

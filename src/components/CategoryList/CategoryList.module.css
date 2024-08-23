@@ -1,0 +1,67 @@
+.categoryListContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 0px;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 0.5rem;
+}
+
+.categoryMainDescription {
+  margin: 1.5rem 0;
+  color: darkgrey;
+}
+
+.categoriesListContainer {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
+}
+
+.categoryListItem {
+  padding: 1rem 0;
+  display: flex;
+}
+
+.categoryListItem:hover .cardTitle {
+  color: var(--primary-green-color);
+}
+
+.categoryListItem:not(:last-child):hover {
+  border-bottom: 1px solid var(--primary-green-color);
+}
+
+.categoryListItem:not(:last-child) {
+  border-bottom: 1px solid rgb(235, 235, 235);
+  transition: 0.3s ease;
+}
+
+.cardImageContainer {
+  min-width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardDescription {
+  margin-left: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 22px;
+  font-weight: var(--font-bold);
+  transition: 0.3s ease;
+}
+
+.cardText {
+  margin-top: 1rem;
+  font-size: 16px;
+}

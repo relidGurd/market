@@ -1,0 +1,72 @@
+.footerSection {
+  background-color: var(--primary-red-color);
+}
+
+.footerContainer {
+  padding: 4rem 0;
+  color: white;
+  font-size: 15px;
+  font-weight: var(--font-bold);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.footerFSection {
+  grid-column: span 2;
+}
+
+.footerColumnTitle {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.navigationFooter {
+  margin-bottom: 2rem;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  color: #fcb8bb;
+}
+
+.footerList li:not(:last-child) {
+  margin-bottom: 0.3rem;
+}
+
+.footerLogoContainer {
+  width: 250px;
+  height: auto;
+}
+
+.footerLogoImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footerFormSection {
+  margin: 1rem 0;
+}
+
+.footerForm {
+  display: flex;
+}
+
+.footerInput input {
+  border: 1px solid white;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.footerButton {
+  padding: 1rem;
+  border: 1px solid var(--primary-bg-color);
+  border-radius: 0 0.5rem 0.5rem 0;
+  font-weight: var(--font-bold);
+  transition: 0.3s ease;
+  color: var(--primary-red-color);
+  background-color: var(--primary-bg-color);
+}
