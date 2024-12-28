@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_page_sliders",
+  "info": {
+    "displayName": "slider",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "item": {
+      "displayName": "slide_item",
+      "type": "component",
+      "repeatable": true,
+      "component": "page.slide-item"
+    }
+  }
+}

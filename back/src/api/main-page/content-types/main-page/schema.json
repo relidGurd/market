@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_pages",
+  "info": {
+    "singularName": "main-page",
+    "pluralName": "main-pages",
+    "displayName": "Main Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mainList": {
+      "type": "dynamiczone",
+      "components": [
+        "page.info-card",
+        "page.accordion",
+        "page.tab",
+        "page.special-offer",
+        "page.slider"
+      ]
+    }
+  }
+}

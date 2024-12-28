@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_page_tabs",
+  "info": {
+    "displayName": "Tab",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "item": {
+      "displayName": "tabItem",
+      "type": "component",
+      "repeatable": true,
+      "component": "page.tab-item"
+    }
+  }
+}

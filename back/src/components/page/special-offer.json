@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_page_special_offers",
+  "info": {
+    "displayName": "SpecialOffer"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    }
+  }
+}

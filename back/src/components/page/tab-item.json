@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_page_tab_items",
+  "info": {
+    "displayName": "tabItem",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

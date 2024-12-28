@@ -1,0 +1,35 @@
+.productCardContainer {
+  margin-top: 2rem;
+}
+
+.productArticle {
+  display: block;
+  margin-bottom: 1.5rem;
+  color: darkgrey;
+  font-size: 15px;
+}
+
+.productCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prodButtonRent {
+  border: 1px solid var(--primary-red-color);
+}
+
+.prodPriceContainer,
+.prodRentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prodPrice,
+.rentPrice {
+  padding: 0 5rem;
+  display: block;
+  font-size: 25px;
+  font-weight: var(--font-bold);
+}

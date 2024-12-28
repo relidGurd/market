@@ -1,0 +1,6 @@
+.productArticle {
+  display: flex;
+  margin-bottom: 1.5rem;
+  color: darkgrey;
+  font-size: 15px;
+}

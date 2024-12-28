@@ -1,0 +1,41 @@
+.categoriesListContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.categoryListItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.categoryListItem:hover .cardTitle {
+  color: var(--primary-green-color);
+}
+
+.cardImageContainer {
+  min-width: 30px;
+  max-width: 30px;
+  height: 30px;
+  background-color: var(--primary-red-color);
+  overflow: hidden;
+  border-radius: 0.3rem;
+  margin-right: 0.5rem;
+  padding: 5px;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cardTitle {
+  font-weight: var(--font-bold);
+  margin-bottom: 0.5rem;
+}
+
+.cardText {
+  font-size: 15px;
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "page"
+    },
+    "recommendations": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.accordion"
+    },
+    "components": {
+      "type": "dynamiczone",
+      "components": [
+        "page.tab",
+        "page.special-offer",
+        "page.info-card",
+        "page.accordion"
+      ]
+    }
+  }
+}
